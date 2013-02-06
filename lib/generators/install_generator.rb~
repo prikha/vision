@@ -1,0 +1,7 @@
+class InstallGenerator < Rails::Generators::Base
+  source_root File.expand_path("../templates", __FILE__)
+ 
+  def install
+    copy_file "vision_navigation.rb", "config/templates/vision_navigation.rb"
+  end
+end

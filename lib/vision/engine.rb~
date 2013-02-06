@@ -1,0 +1,5 @@
+module Vision
+  class Engine < ::Rails::Engine
+    config.generators.templates.unshift File.expand_path("lib/templates", root)
+  end
+end
