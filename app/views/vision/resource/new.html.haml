@@ -1,0 +1,5 @@
+%h2
+  = "New #{resource_class.model_name.human}"
+= render :partial => "form"
+%br/
+= link_to t(:back), collection_path

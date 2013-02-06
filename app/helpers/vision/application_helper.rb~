@@ -1,0 +1,8 @@
+#coding:utf-8
+module Vision::ApplicationHelper
+
+  def user_name
+    current_user.try(:email) || current_user.id
+  end
+
+end

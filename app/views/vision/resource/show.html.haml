@@ -1,0 +1,10 @@
+%div
+  %dl.dl-horizontal
+    - attributes.each do |attr|
+      %dt
+        = resource_class.human_attribute_name(attr)
+      %dd
+        = resource.public_send(attr) || "none"
+  .btn-group
+    = link_to t(:back), collection_path, :class=>"btn btn-action"
+    = link_to t(:edit), edit_resource_path(resource), :class=>"btn btn-warning"

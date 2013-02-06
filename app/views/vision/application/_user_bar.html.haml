@@ -1,0 +1,8 @@
+- if user_signed_in?
+  %ul.nav.pull-right
+    %li= link_to t('.dashboard'), vision_root_path
+    %li= link_to user_name, edit_user_registration_path
+    %li= icon_link_to(t('sign_out'), "icon-eject", destroy_user_session_path, :method =>:delete)
+- else
+  %ul.nav.pull-right
+    %li= link_to (t 'sign_in'), new_user_session_path
