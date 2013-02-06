@@ -1,0 +1,9 @@
+.row
+  .span1
+    = link_to t(:new), new_resource_path, class: "btn btn-success"
+  .span9
+    = render :partial => "search" if searchable?
+.row
+  = render :partial => "index"
+.row
+  = paginate collection,  :theme => 'twitter-bootstrap'

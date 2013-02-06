@@ -4,11 +4,14 @@ require 'rails/generators'
 
 #GEMS REQUIRE!
 require 'haml-rails'
+
 require 'kaminari'
 require 'bootstrap-kaminari-views'
+
 require 'redactor-rails'
 require 'carrierwave'
 require 'mini_magick'
+
 require 'simple_form'
 require 'simple_form_fancy_uploads'
 require 'simple-navigation'
