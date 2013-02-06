@@ -1,5 +1,5 @@
 require "vision/engine"
-
+require 'rails/generators'
 
 
 #GEMS REQUIRE!
@@ -12,7 +12,7 @@ require 'mini_magick'
 require 'simple_form'
 require 'simple_form_fancy_uploads'
 require 'simple-navigation'
-SimpleNavigation::config_file_paths << File.expand_path("../../config", __FILE__)
+#SimpleNavigation::config_file_paths << File.expand_path("../../config", __FILE__)
 require 'inherited_resources'
 require 'has_scope'
 require 'devise'
