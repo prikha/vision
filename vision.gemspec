@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Vision::VERSION
   s.authors     = ["Serj Prikhodko"]
   s.email       = ["sergey@zengile.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Vision."
-  s.description = "TODO: Description of Vision."
+  s.homepage    = "http://github.com/prikha/vision"
+  s.summary     = "Vision is a Rails Way dashboard, built as a simple alternative to ActiveAdmin."
+  s.description = "Vision is a Rails Way dashboard, built as a simple alternative to ActiveAdmin."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
