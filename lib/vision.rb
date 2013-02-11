@@ -20,6 +20,11 @@ require 'inherited_resources'
 require 'has_scope'
 require 'devise'
 require 'cancan'
+require 'less'
+require 'less-rails'
+require 'twitter-bootstrap-rails'
+require 'uglifier'
+require 'execjs'
 
 module Vision
   mattr_accessor :title

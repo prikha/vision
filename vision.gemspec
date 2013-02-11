@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'jquery-ui-rails'
 
 #TEMPLATES
-  s.add_dependency'haml-rails'
+  s.add_dependency 'haml-rails'
   s.add_dependency 'twitter-bootstrap-rails'
 
 ##PAGINATION
@@ -43,7 +43,14 @@ Gem::Specification.new do |s|
 #ACCESS MANAGEMENT
   s.add_dependency 'inherited_resources'
   s.add_dependency 'has_scope'
-  s.add_dependency 'devise'
+  #s.add_dependency 'devise'
   s.add_dependency 'cancan'
+
+  s.add_dependency 'less-rails'
+  s.add_dependency 'less'
+  s.add_dependency 'uglifier'
+
+  s.add_dependency 'execjs'
+  s.add_dependency 'therubyracer'
 
 end

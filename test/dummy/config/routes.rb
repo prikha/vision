@@ -1,4 +1,12 @@
 Dummy::Application.routes.draw do
+  namespace :vision, {:path=>'admin'} do
+    root :to=>'users#index'
+    # vision routes
+    resources :users
+  end
+
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
