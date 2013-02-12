@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %title= Vision.title
+    = stylesheet_link_tag    "vision/application", :media => "all"
+    = javascript_include_tag "vision/application"
+    = csrf_meta_tags
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          = link_to Vision.title, vision_root_path, class: 'brand'
+          .nav
+          = render 'user_bar'
+    .container-fluid
+      .row-fluid.alerts
+        = bootstrap_flash
+      .row-fluid
+        .span2.bs-docs-sidebar
+          = render_navigation :context=>:vision, :expand_all=>true
+        .span10
+          = yield
+          = redactor_lang("ru")
+
+

@@ -1,4 +1,8 @@
-# desc "Explaining what the task does"
-# task :vision do
-#   # Task goes here
-# end
+#coding: utf-8
+
+namespace :vision do
+
+
+
+
+end
