@@ -1,7 +1,5 @@
 Dummy::Application.routes.draw do
-  namespace :vision, {:path=>'vision'} do
-    # vision routes
-  end
+
   devise_for :users
 
   # The priority is based upon order of creation:
