@@ -1,26 +1,31 @@
-= Vision
-== Install it using Gemfile
+# Vision
+## Install it using Gemfile
 
-Ставим: gem 'vision', :git=>'git://github.com/prikha/vision.git'
-Запускаем генератор
- rails g vision:install
-Для любого ресурса можно создать административный контроллер
- rails g vision:resource resource_name
- rails g vision:resource user 
+`gem 'vision', :git=>'git://github.com/prikha/vision.git'`
 
-Если нужно переписать вьюхи, то
- rails g vision:views resource_name
- rails g vision:views user
+##Generators
+
+###Vision:
+####installation
+  `vision:install` - the one and the only MUSTRUN generator
+####assets
+  `vision:assets` - delivers you assets from the engine to for customization
+  `vision:css` - delivers only CSS
+  `vision:js` - delivers only JS
+  `vision:layout` - get the layout
+####make it dance
+  `vision:resource` - generates new resource in your admin interface
+  `vision:views`  - overrides views for customization
 
 Админка доступна по адресу /vision и резервирует под себя этот путь включая vision_path
 
 
-Из того что необходимо сделать и ОЧЕНЬ ВАЖНО для работоспособности админки:
-Описание и попадение в rubygems
-ТЕСТЫ на гем и генераторы
-Сделать рабочее dummy_app для тестирования
-генератор на обычный контроллер и вьюхи (не inherited resources)
-Система работы как с обычнми гемами: fork->change->test->pull request
+
+
+
+
+
+
 
 
 

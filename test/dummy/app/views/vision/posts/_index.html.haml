@@ -1,0 +1,16 @@
+%table.table.table-striped
+  %thead
+    %tr
+      - attributes.each do |attr|
+        %th= sortable attr, resource_class.human_attribute_name(attr)
+  %tbody
+    - collection.each do |resource|
+      %tr
+        - attributes.each do |attr|
+          %td
+            = resource.public_send(attr).to_s.truncate(20)
+        %td
+          .btn-group
+            = link_to t(:show), resource_path(resource), :class=>"btn btn-action"
+            = link_to t(:edit), edit_resource_path(resource),:class=>"btn btn-warning"
+            = link_to( t(:delete), resource_path(resource),:method => :delete, :confirm =>"This action is irreversible!",:class=>"btn btn-danger" )
