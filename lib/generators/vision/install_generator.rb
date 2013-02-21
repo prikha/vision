@@ -16,6 +16,10 @@ module Vision
         copy_file 'vision.rb', 'config/initializers/vision.rb'
       end
 
+      def copy_migrations
+        migration_template "migrations/create_redactor_assets.rb", "db/migrate/create_redactor_assets.rb"
+      end
+
     end
   end
 end

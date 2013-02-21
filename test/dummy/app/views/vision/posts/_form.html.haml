@@ -1,0 +1,6 @@
+= simple_form_for [:vision, resource], :html=>{:class=>"form form-horizontal"} do |f|
+  = f.input :name, :input_html=>{:class=>"input-xxlarge"}
+  = f.input :description, :input_html=>{:class=>"redactor input-xxlarge"}
+  - associations(:belongs_to).each do |assoc|
+    = f.association assoc.name.to_sym
+  = f.submit :class=>"btn btn-success"

@@ -1,4 +1,11 @@
 Dummy::Application.routes.draw do
+  namespace :vision, {:path=>'vision'} do
+    # vision routes
+
+    root :to=> 'users#index'
+    resources :posts
+    resources :users
+  end
 
   devise_for :users
 
