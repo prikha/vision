@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    vision (0.0.1.alpha1)
+    vision (0.0.1.beta)
       bootstrap-kaminari-views
       cancan
       carrierwave
