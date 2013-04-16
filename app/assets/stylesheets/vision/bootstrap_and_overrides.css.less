@@ -28,27 +28,21 @@
 body { padding-top: 60px; }
 
 .redactor_box{
-//  .input-xxlarge();
+  .input-xxlarge();
 }
 
-.simple-navigation-active-leaf .active{
-  text-decoration: underline;
-}
+.simple-navigation-active-leaf .active{ text-decoration: underline;}
 
-.nav ul{
-  list-style: none;
-}
+.nav ul{ list-style: none;}
 
-select.date{
-  width: 100px;
-}
-
+select.date{ width: 100px;}
 textarea{height: 100px;}
-
-
 
 .alert.alert-informer{background: #ccc;}
 
-.datetime.input-xxlarge{
-  width: 80px;
+.datetime.input-xxlarge{ width: 80px;}
+
+a.link-no-decoration{
+  &, &:hover, &:active{text-decoration: none}
+  &.current{color: @orange;}
 }
