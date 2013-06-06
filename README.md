@@ -14,9 +14,9 @@
 ####assets
   `vision:assets` - delivers you assets from the engine to for customization
   
-      `vision:css` - delivers only CSS
+   `vision:css` - delivers only CSS
       
-      `vision:js` - delivers only JS
+    `vision:js` - delivers only JS
   
   `vision:layout` - get the layout
   
