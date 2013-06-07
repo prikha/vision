@@ -6,6 +6,11 @@ source "http://rubygems.org"
 gemspec
 
 # jquery-rails is used by the dummy application
-gem "jquery-rails"
+gem 'jquery-rails'
 gem 'sqlite3'
 gem 'devise'
+gem 'sprockets', '2.2.2'
+gem 'coffee-rails'
+gem 'sass-rails'
+gem 'font-awesome-rails'
+gem 'compass-rails'

@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
 #TEMPLATES
   s.add_dependency 'haml-rails'
   s.add_dependency 'twitter-bootstrap-rails'
+  s.add_dependency 'font-awesome-rails'
 
 ##PAGINATION
   s.add_dependency 'kaminari'

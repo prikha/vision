@@ -10,6 +10,7 @@
  *
  *= require redactor-rails
  *= require vision/bootstrap_and_overrides
+ *= require font-awesome
  *= require_self
  */
 
